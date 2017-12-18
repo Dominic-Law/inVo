@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace inVo
 {
-    public partial class Form1 : Form
+    public partial class inVo : Form
     {
-        public Form1()
+        public inVo()
         {
             InitializeComponent();
         }
+
     }
 }
