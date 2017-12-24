@@ -7,7 +7,7 @@
     <ProjectGuid>{C64A1ACD-5B60-4CB8-AEA4-959BA3357FCD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>inVo</RootNamespace>
-    <AssemblyName>inVo</AssemblyName>
+    <AssemblyName>invo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -75,20 +75,33 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\h_minimize.png" />
-    <None Include="Resources\minimize.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.png" />
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\h_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h_minimize.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

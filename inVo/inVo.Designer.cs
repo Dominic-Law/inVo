@@ -1,6 +1,6 @@
 ﻿namespace inVo
 {
-    partial class inVo
+    partial class invo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,71 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inVo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(invo));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.close = new System.Windows.Forms.PictureBox();
+            this.minimize = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 563);
+            this.panel1.Size = new System.Drawing.Size(176, 563);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::inVo.Properties.Resources.logo;
-            this.button1.Location = new System.Drawing.Point(35, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 40);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::inVo.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 40);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // btnClose
+            // close
             // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.Image = global::inVo.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(1205, 8);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(24, 24);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
+            this.close.InitialImage = ((System.Drawing.Image)(resources.GetObject("close.InitialImage")));
+            this.close.Location = new System.Drawing.Point(1215, 9);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(12, 12);
+            this.close.TabIndex = 0;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            this.close.MouseHover += new System.EventHandler(this.close_MouseHover);
             // 
-            // btnMinimize
+            // minimize
             // 
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(1178, 8);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(24, 24);
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.minimize.Image = global::inVo.Properties.Resources.minimize;
+            this.minimize.Location = new System.Drawing.Point(1197, 9);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(12, 12);
+            this.minimize.TabIndex = 1;
+            this.minimize.TabStop = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            this.minimize.MouseHover += new System.EventHandler(this.minimize_MouseHover);
             // 
-            // inVo
+            // invo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1239, 563);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnMinimize);
+            this.Controls.Add(this.close);
+            this.Controls.Add(this.minimize);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "inVo";
+            this.Name = "invo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inVo";
+            this.Load += new System.EventHandler(this.inVo_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -100,8 +107,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnMinimize;
-        private System.Windows.Forms.Button btnClose;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.PictureBox minimize;
+        private System.Windows.Forms.PictureBox close;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
