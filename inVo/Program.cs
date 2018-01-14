@@ -16,7 +16,7 @@ namespace inVo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new invo());
+            Application.Run(new dashboard());
         }
     }
 }

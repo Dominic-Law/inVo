@@ -7,12 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace inVo
 {
-    public partial class invo : Form
+    public partial class dashboard : Form
     {
-        public invo()
+
+        static void Dashboard(string[] args)
+        {
+            try
+            {
+
+            }
+            
+            catch(Exception)
+            {
+                throw;
+            }
+        }
+
+        public dashboard()
         {
             InitializeComponent();
             minimize.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -45,14 +60,34 @@ namespace inVo
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
         }
 
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            inventory_panel.Visible = true;
+        }
+
         private void minimize_MouseHover(object sender, EventArgs e)
         {
-           minimize.BackgroundImage = new Bitmap(inVo.Properties.Resources.h_minimize);
+            minimize.BackgroundImage = new Bitmap(inVo.Properties.Resources.h_minimize);
+            label1.Text = "minimize_MouseHover";
+        }
+
+        private void minimize_MouseLeave(object sender, EventArgs e)
+        {
+            minimize.BackgroundImage = new Bitmap(inVo.Properties.Resources.minimize);
+            label1.Text = "minimize_MouseLeave";
         }
 
         private void close_MouseHover(object sender, EventArgs e)
         {
-           close.BackgroundImage = new Bitmap(inVo.Properties.Resources.h_close);
+            close.BackgroundImage = new Bitmap(inVo.Properties.Resources.h_close);
+            label1.Text = "close_MouseHover";
         }
+
+        private void close_MouseLeave(object sender, EventArgs e)
+        {
+            close.BackgroundImage = new Bitmap(inVo.Properties.Resources.close);
+            label1.Text = "close_MouseLeave";
+        }
+
     }
 }
